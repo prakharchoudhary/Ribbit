@@ -24,4 +24,7 @@ urlpatterns = [
     url(r'^logout$', rviews.logout_view), # logout
     url(r'^signup$', rviews.signup), # signup
     url(r'^submit$', rviews.submit), # submit
+    url(r'^users$', rviews.users),
+    url(r'^users/(?P<username>\w{0,30})/$', rviews.users),
+    url(r'^follow$', rviews.follows),
 ]
