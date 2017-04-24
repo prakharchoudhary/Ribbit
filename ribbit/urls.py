@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from ribbit_app import views as rviews
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', rviews.index), # root
+    url(r'^login$', rviews.login_view), # login
+    url(r'^logout$', rviews.logout_view), # logout
+    url(r'^signup$', rviews.signup), # signup
 ]
