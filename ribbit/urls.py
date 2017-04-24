@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^login$', rviews.login_view), # login
     url(r'^logout$', rviews.logout_view), # logout
     url(r'^signup$', rviews.signup), # signup
+    url(r'^submit$', rviews.submit), # submit
 ]
